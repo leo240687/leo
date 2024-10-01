@@ -1,0 +1,34 @@
+.banner {
+    height: 100vh;
+    background-image: url("/jmg/banner.jpeg");
+    @extend %background-img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner__content {
+        text-align: center;
+        text-transform: uppercase;
+        h1 {
+            @include textStyle1($fs-title-banner, $fw-0, $clr-dark-bg-txt);
+            letter-spacing: $ls-3;
+            line-height: normal;
+        }
+        h2 {
+            font-weight: $fw-def;
+            letter-spacing: $ls-3 + 1;
+            color: $clr-dark-bg-txt;
+        }
+    }
+
+    // RESPONSIVE 
+    @media screen and (min-width: 769px) {
+        .banner__content {
+            h1 {
+                @include textStyle3($fs-3, $fw-0);
+            }
+            h2 {
+                @include textStyle3($fs-0, $fw-def);
+            }
+        }
+    }
+}

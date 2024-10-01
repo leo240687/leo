@@ -1,0 +1,138 @@
+// Hầu hết em đặt tên biến dựa theo nơi đầu tiên giá trị được tìm thấy.
+// COLORS
+$cLr-def-txt: #323232;
+$clr-dark-bg-txt: white;
+$clr-nav-bg-mob: #0a0a0a;
+$clr-nav-txt-mob: #333;
+$clr-nav-bdr-mob-1: #f0f0f0;
+$clr-nav-bdr-mob-2: #f5f5f5;
+$clr-nav-bsha-mob: rgb(0 0 0 / 10%);
+$clr-second: #d6b161;
+$clr-line-bg: #595959;
+$clr-des-txt: #7e7e7e;
+$clr-design-bdr: #e9e9e9;
+$clr-skills-overlay-bg: rgba(0, 0, 0, 0.5);
+$clr-pro-bar-bg: #606060;
+$clr-pro-bar-txt: #222;
+$clr-num-pro-bar-bg: #a4a4a4;
+$cLr-tab-txt: #a9a8a8;
+$cLr-show-info-bdr: rgba(0, 0, 0, 0.1);
+$cLr-show-info-bg: rgba(255, 255, 255, 0.9);
+$cLr-show-info-p: #757575;
+$cLr-show-overlay-bg: #0b0b0b;
+$cLr-team-name-bg: rgba(0, 0, 0, 0.7);
+$clr-team-pos: rgba(255, 255, 255, 0.5);
+$clr-blog-tag: #909090;
+$clr-blog-read: #bbb;
+$clr-intro-tag-i: #434343;
+$clr-intro-tag-bg: rgba(34, 34, 34, 0.05);
+$clr-num-bg: #1b1b1b;
+$clr-feed-pos: #7f7f7f;
+$clr-feed-bdr: #eeee;
+$clr-footer-link: #a2a2a2;
+$clr-dot: #eaeaea;
+$clr-copy-txt: #6f7273;
+$clr-copy-icon-bdr: #5a5a5a;
+$clr-backtotop-bg: rgba(0, 0, 0, 0.6);
+
+// FONT SIZE
+$fs-def: 15px;
+$fs-nav: 13px;
+$fs-title-small: 18px;
+$fs-title-banner: 30px;
+$fs-pro-bar: 10px;
+$fs-tab: 14px;
+$fs-show-i: 35px;
+$fs-show-categ: 12px;
+$fs-team-i: 16px;
+$fs-intro-i: 36px;
+$fs-0: 20px;
+$fs-1: 26px;
+$fs-3: 60px;
+
+// FONT WEIGHT
+$fw-def: 400;
+$fw-0: 300;
+$fw-1: 200;
+
+// FONT FAMILY
+$ff-def: "Source Sans Pro", sans-serif;
+
+// LINE HEIGHT
+$lh-def: 1.5;
+$lh-btn: 1.42857143;
+$lh-nav-mob: 20px;
+$lh-des: 25px;
+$lh-show-i: 1;
+$lh-0: 30px;
+$lh-1: 35px;
+$lh-2: 60px;
+$lh-3: 45px;
+
+// LETTER SPACING
+$ls-0: 1px;
+$ls-1: 2px;
+$ls-2: 3px;
+$ls-3: 5px;
+
+// PADDING
+$p-sect: 50px;
+$p-cov: 150px;
+$p-num: 100px;
+$p-0: 2px;
+$p-1: 5px;
+$p-2: 8px;
+$p-3: 10px;
+$p-4: 12px;
+$p-5: 15px;
+$p-6: 18px;
+$p-7: 20px;
+$p-8: 24px;
+$p-9: 30px;
+$p-10: 80px;
+$p-11: 40px;
+$p-12: 70px;
+
+// MARGIN
+$m-sect-info: 50px;
+$m-0: 2px;
+$m-1: 5px;
+$m-2: 8px;
+$m-3: 10px;
+$m-4: 12px;
+$m-5: 15px;
+$m-6: 18px;
+$m-7: 20px;
+$m-8: 25px;
+$m-9: 30px;
+$m-10: 100px;
+$m-11: 130px;
+$m-12: 70px;
+
+// BORDER RADIUS
+$bdra-0: 30px;
+$bdra-1: 4px;
+
+// BOX SHADOW
+$bsha-0: 2px;
+$bsha-1: 10px;
+$bsha-2: 30px;
+
+// BREAKPOINTS
+$breakpoints-min-width: (
+    "small": 576px,
+    "medium": 768px,
+    "large": 992px,
+    "extra-large": 1200px,
+    "extra-extra-large": 1400px,
+);
+
+$breakpoints-max-width: (
+    "small": 575.98px,
+    "medium": 767.98px,
+    "large": 991.98px,
+    "extra-large": 1199.98px,
+    "extra-extra-large": 1399.98px,
+);
+
+

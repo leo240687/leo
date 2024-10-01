@@ -1,0 +1,35 @@
+.cover {
+    background-image: url("/jmg/cover.jpeg");
+    @extend %background-img;
+    &.section-padding {
+        padding: $p-cov 0;
+    }
+    .cover__text {
+        span {
+            @include textStyle2($fs-def + 1, $clr-second);
+            letter-spacing: $ls-2;
+        }
+        h1 {
+            @include textStyle1($fs-1, $fw-def, $clr-dark-bg-txt);
+            letter-spacing: $ls-1;
+            line-height: $lh-def;
+        }
+    }
+    .cover__btn {
+        margin-top: $m-sect-info;
+        button {
+            margin-bottom: $m-1;
+        }
+    }
+
+    // RESPONSIVE
+    @media screen and (min-width: 769px) {
+        .cover__text {
+            h1 {
+                font-size: $fs-intro-i;
+            }
+        }
+
+    }
+
+}

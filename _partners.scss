@@ -1,0 +1,8 @@
+.partners__content {
+    padding: 0 $p-9;
+
+    // RESPONSIVE
+    @media screen and (min-width: 992px) {
+        border-bottom: 6px solid $clr-dark-bg-txt;
+    }
+}

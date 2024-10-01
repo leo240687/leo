@@ -1,0 +1,33 @@
+.back-to-top {
+    .backToTop {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $clr-backtotop-bg;
+        text-align: center;
+        color: $clr-dark-bg-txt;
+        transform: translateY(45px);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        &.cd-top--is-visible {
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover, &:focus {
+            color: $clr-nav-txt-mob;
+        }
+        &:hover {
+            background-color: $clr-second;
+        }
+    }
+
+    // RESPONSIVE
+    @media screen and (max-width: 800px) {
+       display: none;
+    }
+}

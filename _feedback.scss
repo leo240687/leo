@@ -1,0 +1,44 @@
+.feedback {
+    border-bottom: 1px solid $clr-feed-bdr;
+    .feedback__content {
+        padding: 0 $p-9;
+        .feedback__item {
+            text-align: center;
+            .feedback__thumb {
+                display: inline-block;
+                width: 100px;
+                margin-bottom: $m-7;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .feedback__comment {
+                @include textStyle2($fs-team-i, $clr-des-txt);
+                font-style: italic;
+                line-height: $lh-0;
+                margin-bottom: $m-9;
+            }
+            .feedback__user {
+                text-transform: uppercase;
+                letter-spacing: $ls-1;
+                margin-top: $m-3;
+                p:first-child {
+                    @include textStyle2($fs-tab, $clr-pro-bar-txt);
+                }
+                p:last-child {
+                    @include textStyle2($fs-show-categ, $clr-feed-pos);
+                }
+    
+            }
+        }
+    }
+
+    // RESPONSIVE
+    @media screen and (min-width: 1215px) {
+        .feedback__content {
+            width: 66.66666667%;
+            margin: auto;
+        }
+    }
+
+}

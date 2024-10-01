@@ -1,0 +1,73 @@
+.intro {
+    background-image: url("/jmg/intro.png");
+    background-attachment: fixed;
+    .nav-item {
+        width: 100%;
+        margin-bottom: $m-3;
+        .nav-link {
+            position: relative;
+            border-radius: 0;
+            background-color: $clr-intro-tag-bg;
+            text-align: center;
+            color: $clr-intro-tag-i;
+            padding: $p-9 + 5 $p-12;
+            cursor: pointer;
+            &:hover,
+            &.active {
+                background-color: $clr-dark-bg-txt;
+                color: $clr-pro-bar-txt;
+                &::after {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    content: "";
+                    @include arrow(10px, down, $clr-dark-bg-txt);
+                    opacity: 1;
+                }
+            }
+            i {
+                font-size: $fs-intro-i;
+            }
+        }
+    }
+    .tab-pane {
+        line-height: $lh-0;
+        padding: $p-9 0;
+        .intro__title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: $m-sect-info;
+            p {
+                @include textStyle2($fs-tab, $clr-des-txt);
+            }
+            h3 {
+                font-size: $fs-0;
+            }
+        }
+    }
+
+    // RESPONSIVE
+    @include responsiveMobileFirst("medium") {
+        .intro__nav {
+            justify-content: space-between;
+            .nav-item {
+                width: 18%;
+                margin: 0;
+                .nav-link {
+                    padding: $p-9 + 5 $p-7 * 2;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .tab-pane {
+            .intro__title {
+                h3 {
+                    font-size: $fs-title-banner;
+                }
+            }
+        }
+    }
+}

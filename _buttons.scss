@@ -1,0 +1,18 @@
+.btn--black {
+    @include buttonStyle($clr-pro-bar-txt);
+    &:hover {
+        @include buttonHoverStyle($clr-second, $clr-dark-bg-txt);
+    }
+    &:focus {
+        @include buttonFocusStyle($clr-second, $clr-dark-bg-txt);
+    }
+}
+.btn--yellow {
+    @include buttonStyle($clr-second);
+    &:hover {
+        @include buttonHoverStyle($clr-dark-bg-txt, $clr-pro-bar-txt);
+    }
+    &:focus {
+        @include buttonFocusStyle($clr-dark-bg-txt, $clr-pro-bar-txt);
+    }
+}
